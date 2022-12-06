@@ -449,4 +449,34 @@
     .w:hover {
         background-color: var(--ol2);
     }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    body {
+        background-color: #000000;
+    }
+
+    .container {
+        transition-duration: 0.2s;
+    }
+
+    .cw > label, .w {
+        transition-duration: 0.08s;
+    }
+
+    .container {
+        animation: zoom 0.2s;
+    }
+
+    .cw > label:hover {
+        filter: brightness(1.08);
+    }
 </style>
