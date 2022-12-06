@@ -43,6 +43,9 @@
             </div>
         </nav>
     </header>
+    <main>
+        <slot />
+    </main>
 </div>
 <style>
     @import "@catppuccin/palette/style";
@@ -478,5 +481,21 @@
 
     .cw > label:hover {
         filter: brightness(1.08);
+    }
+
+    main {
+        font-family: serif;
+        margin: auto;
+        max-width: 38rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    :global(h1, h2, h3, h4, h5, h6) {
+        color: var(--ac);
+    }
+
+    :global(img) {
+        max-width: 100%;
     }
 </style>
