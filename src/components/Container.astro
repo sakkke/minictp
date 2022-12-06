@@ -1,8 +1,14 @@
 <input type="checkbox" name="a" id="a">
 <input type="checkbox" name="b" id="b">
 <div class="container">
-    <label for="a" class="a"></label>
-    <label for="b" class="b"></label>
+    <header>
+        <nav class="nb">
+            <div class="w">
+                <label for="a" class="a"></label>
+                <label for="b" class="b"></label>
+            </div>
+        </nav>
+    </header>
 </div>
 <style>
     @import "@catppuccin/palette/style";
@@ -12,6 +18,9 @@
         --b: none;
         --s: '🌻';
         --bgc: var(--ctp-latte-base);
+        --ol0: var(--ctp-latte-overlay0);
+        --ol1: var(--ctp-latte-overlay1);
+        --ol2: var(--ctp-latte-overlay2);
     }
 
     #a:checked ~ :not(#b:checked) ~ .container {
@@ -19,6 +28,9 @@
         --b: block;
         --s: '🪴';
         --bgc: var(--ctp-frappe-base);
+        --ol0: var(--ctp-frappe-overlay0);
+        --ol1: var(--ctp-frappe-overlay1);
+        --ol2: var(--ctp-frappe-overlay2);
     }
 
     #a:checked ~ #b:checked ~ .container {
@@ -26,6 +38,9 @@
         --b: none;
         --s: '🌺';
         --bgc: var(--ctp-macchiato-base);
+        --ol0: var(--ctp-macchiato-overlay0);
+        --ol1: var(--ctp-macchiato-overlay1);
+        --ol2: var(--ctp-macchiato-overlay2);
     }
 
     :not(#a:checked) ~ #b:checked ~ .container {
@@ -33,6 +48,9 @@
         --b: block;
         --s: '🌿';
         --bgc: var(--ctp-mocha-base);
+        --ol0: var(--ctp-mocha-overlay0);
+        --ol1: var(--ctp-mocha-overlay1);
+        --ol2: var(--ctp-mocha-overlay2);
     }
 
     #a, #b {
@@ -61,5 +79,25 @@
 
     .container {
         background-color: var(--bgc);
+    }
+
+    .nb {
+        background-color: var(--ol0);
+        display: grid;
+        height: 48px;
+        place-items: end;
+    }
+
+    .w {
+        aspect-ratio: 1;
+        background-color: var(--ol1);
+        display: grid;
+        font-size: 24px;
+        height: 100%;
+        place-items: center;
+    }
+
+    .w:hover {
+        background-color: var(--ol2);
     }
 </style>
