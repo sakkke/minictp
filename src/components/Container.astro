@@ -1,8 +1,42 @@
 <input type="checkbox" name="a" id="a">
 <input type="checkbox" name="b" id="b">
+<input type="checkbox" name="c" id="c">
+<input type="radio" name="ctp" id="rosewater">
+<input type="radio" name="ctp" id="flamingo">
+<input type="radio" name="ctp" id="pink">
+<input type="radio" name="ctp" id="mauve">
+<input type="radio" name="ctp" id="red">
+<input type="radio" name="ctp" id="maroon">
+<input type="radio" name="ctp" id="peach">
+<input type="radio" name="ctp" id="yellow">
+<input type="radio" name="ctp" id="green">
+<input type="radio" name="ctp" id="teal">
+<input type="radio" name="ctp" id="sky">
+<input type="radio" name="ctp" id="sapphire">
+<input type="radio" name="ctp" id="blue">
+<input type="radio" name="ctp" id="lavender">
 <div class="container">
     <header>
         <nav class="nb">
+            <label for="c" class="c">
+                <div class="cw">
+                    <label for="rosewater"></label>
+                    <label for="flamingo"></label>
+                    <label for="pink"></label>
+                    <label for="mauve"></label>
+                    <label for="red"></label>
+                    <label for="maroon"></label>
+                    <label for="peach"></label>
+                    <label for="yellow"></label>
+                    <label for="green"></label>
+                    <label for="teal"></label>
+                    <label for="sky"></label>
+                    <label for="sapphire"></label>
+                    <label for="blue"></label>
+                    <label for="lavender"></label>
+                </div>
+            </label>
+            <div class="s"></div>
             <div class="w">
                 <label for="a" class="a"></label>
                 <label for="b" class="b"></label>
@@ -21,6 +55,20 @@
         --ol0: var(--ctp-latte-overlay0);
         --ol1: var(--ctp-latte-overlay1);
         --ol2: var(--ctp-latte-overlay2);
+        --rosewater: var(--ctp-latte-rosewater);
+        --flamingo: var(--ctp-latte-flamingo);
+        --pink: var(--ctp-latte-pink);
+        --mauve: var(--ctp-latte-mauve);
+        --red: var(--ctp-latte-red);
+        --maroon: var(--ctp-latte-maroon);
+        --peach: var(--ctp-latte-peach);
+        --yellow: var(--ctp-latte-yellow);
+        --green: var(--ctp-latte-green);
+        --teal: var(--ctp-latte-teal);
+        --sky: var(--ctp-latte-sky);
+        --sapphire: var(--ctp-latte-sapphire);
+        --blue: var(--ctp-latte-blue);
+        --lavender: var(--ctp-latte-lavender);
     }
 
     #a:checked ~ :not(#b:checked) ~ .container {
@@ -31,6 +79,20 @@
         --ol0: var(--ctp-frappe-overlay0);
         --ol1: var(--ctp-frappe-overlay1);
         --ol2: var(--ctp-frappe-overlay2);
+        --rosewater: var(--ctp-frappe-rosewater);
+        --flamingo: var(--ctp-frappe-flamingo);
+        --pink: var(--ctp-frappe-pink);
+        --mauve: var(--ctp-frappe-mauve);
+        --red: var(--ctp-frappe-red);
+        --maroon: var(--ctp-frappe-maroon);
+        --peach: var(--ctp-frappe-peach);
+        --yellow: var(--ctp-frappe-yellow);
+        --green: var(--ctp-frappe-green);
+        --teal: var(--ctp-frappe-teal);
+        --sky: var(--ctp-frappe-sky);
+        --sapphire: var(--ctp-frappe-sapphire);
+        --blue: var(--ctp-frappe-blue);
+        --lavender: var(--ctp-frappe-lavender);
     }
 
     #a:checked ~ #b:checked ~ .container {
@@ -41,6 +103,20 @@
         --ol0: var(--ctp-macchiato-overlay0);
         --ol1: var(--ctp-macchiato-overlay1);
         --ol2: var(--ctp-macchiato-overlay2);
+        --rosewater: var(--ctp-macchiato-rosewater);
+        --flamingo: var(--ctp-macchiato-flamingo);
+        --pink: var(--ctp-macchiato-pink);
+        --mauve: var(--ctp-macchiato-mauve);
+        --red: var(--ctp-macchiato-red);
+        --maroon: var(--ctp-macchiato-maroon);
+        --peach: var(--ctp-macchiato-peach);
+        --yellow: var(--ctp-macchiato-yellow);
+        --green: var(--ctp-macchiato-green);
+        --teal: var(--ctp-macchiato-teal);
+        --sky: var(--ctp-macchiato-sky);
+        --sapphire: var(--ctp-macchiato-sapphire);
+        --blue: var(--ctp-macchiato-blue);
+        --lavender: var(--ctp-macchiato-lavender);
     }
 
     :not(#a:checked) ~ #b:checked ~ .container {
@@ -51,6 +127,25 @@
         --ol0: var(--ctp-mocha-overlay0);
         --ol1: var(--ctp-mocha-overlay1);
         --ol2: var(--ctp-mocha-overlay2);
+        --rosewater: var(--ctp-mocha-rosewater);
+        --flamingo: var(--ctp-mocha-flamingo);
+        --pink: var(--ctp-mocha-pink);
+        --mauve: var(--ctp-mocha-mauve);
+        --red: var(--ctp-mocha-red);
+        --maroon: var(--ctp-mocha-maroon);
+        --peach: var(--ctp-mocha-peach);
+        --yellow: var(--ctp-mocha-yellow);
+        --green: var(--ctp-mocha-green);
+        --teal: var(--ctp-mocha-teal);
+        --sky: var(--ctp-mocha-sky);
+        --sapphire: var(--ctp-mocha-sapphire);
+        --blue: var(--ctp-mocha-blue);
+        --lavender: var(--ctp-mocha-lavender);
+    }
+
+    .container {
+        --ac: var(--peach);
+        --cw: none;
     }
 
     #a, #b {
@@ -77,15 +172,165 @@
         margin: 0;
     }
 
+    input[name="ctp"] {
+        display: none;
+    }
+
+    #c {
+        display: none;
+    }
+
+    #c:checked ~ .container {
+        --cw: flex;
+    }
+
+    #rosewater:checked ~ .container {
+        --ac: var(--rosewater);
+    }
+
+    #flamingo:checked ~ .container {
+        --ac: var(--flamingo);
+    }
+
+    #pink:checked ~ .container {
+        --ac: var(--pink);
+    }
+
+    #mauve:checked ~ .container {
+        --ac: var(--mauve);
+    }
+
+    #red:checked ~ .container {
+        --ac: var(--red);
+    }
+
+    #maroon:checked ~ .container {
+        --ac: var(--maroon);
+    }
+
+    #peach:checked ~ .container {
+        --ac: var(--peach);
+    }
+
+    #yellow:checked ~ .container {
+        --ac: var(--yellow);
+    }
+
+    #green:checked ~ .container {
+        --ac: var(--green);
+    }
+
+    #teal:checked ~ .container {
+        --ac: var(--teal);
+    }
+
+    #ske:checked ~ .container {
+        --ac: var(--ske);
+    }
+
+    #sapphire:checked ~ .container {
+        --ac: var(--sapphire);
+    }
+
+    #blue:checked ~ .container {
+        --ac: var(--blue);
+    }
+
+    #lavender:checked ~ .container {
+        --ac: var(--lavender);
+    }
+
     .container {
         background-color: var(--bgc);
     }
 
     .nb {
         background-color: var(--ol0);
-        display: grid;
+        display: flex;
         height: 48px;
-        place-items: end;
+    }
+
+    .c {
+        aspect-ratio: 1;
+        background-color: var(--ac);
+        height: 100%;
+        position: relative;
+    }
+
+    .cw {
+        display: var(--cw);
+        flex-wrap: wrap;
+        width: 240px;
+    }
+
+    .cw > label {
+        display: block;
+        height: 48px;
+        width: 48px;
+    }
+
+    label[for="rosewater"] {
+        margin-left: 48px;
+    }
+
+    label[for="rosewater"] {
+        background-color: var(--rosewater);
+    }
+
+    label[for="flamingo"] {
+        background-color: var(--flamingo);
+    }
+
+    label[for="pink"] {
+        background-color: var(--pink);
+    }
+
+    label[for="mauve"] {
+        background-color: var(--mauve);
+    }
+
+    label[for="red"] {
+        background-color: var(--red);
+    }
+
+    label[for="maroon"] {
+        background-color: var(--maroon);
+    }
+
+    label[for="peach"] {
+        background-color: var(--peach);
+    }
+
+    label[for="yellow"] {
+        background-color: var(--yellow);
+    }
+
+    label[for="green"] {
+        background-color: var(--green);
+    }
+
+    label[for="teal"] {
+        background-color: var(--teal);
+    }
+
+    label[for="sky"] {
+        background-color: var(--sky);
+    }
+
+    label[for="sapphire"] {
+        background-color: var(--sapphire);
+    }
+
+    label[for="blue"] {
+        background-color: var(--blue);
+    }
+
+    label[for="lavender"] {
+        background-color: var(--lavender);
+    }
+
+    .s {
+        flex-grow: 1;
     }
 
     .w {
