@@ -1,0 +1,65 @@
+<input type="checkbox" name="a" id="a">
+<input type="checkbox" name="b" id="b">
+<div class="container">
+    <label for="a" class="a"></label>
+    <label for="b" class="b"></label>
+</div>
+<style>
+    @import "@catppuccin/palette/style";
+
+    :not(#a:checked) ~ :not(#b:checked) ~ .container {
+        --a: block;
+        --b: none;
+        --s: '🌻';
+        --bgc: var(--ctp-latte-base);
+    }
+
+    #a:checked ~ :not(#b:checked) ~ .container {
+        --a: none;
+        --b: block;
+        --s: '🪴';
+        --bgc: var(--ctp-frappe-base);
+    }
+
+    #a:checked ~ #b:checked ~ .container {
+        --a: block;
+        --b: none;
+        --s: '🌺';
+        --bgc: var(--ctp-macchiato-base);
+    }
+
+    :not(#a:checked) ~ #b:checked ~ .container {
+        --a: none;
+        --b: block;
+        --s: '🌿';
+        --bgc: var(--ctp-mocha-base);
+    }
+
+    #a, #b {
+        display: none;
+    }
+
+    .a {
+        display: var(--a);
+    }
+
+    .b {
+        display: var(--b);
+    }
+
+    .a::after, .b::after {
+        content: var(--s);
+    }
+
+    html, body, .container {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .container {
+        background-color: var(--bgc);
+    }
+</style>
