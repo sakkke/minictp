@@ -1,20 +1,20 @@
-<input type="checkbox" name="a" id="a">
-<input type="checkbox" name="b" id="b">
-<input type="checkbox" name="c" id="c">
-<input type="radio" name="ctp" id="rosewater">
-<input type="radio" name="ctp" id="flamingo">
-<input type="radio" name="ctp" id="pink">
-<input type="radio" name="ctp" id="mauve">
-<input type="radio" name="ctp" id="red">
-<input type="radio" name="ctp" id="maroon">
-<input type="radio" name="ctp" id="peach">
-<input type="radio" name="ctp" id="yellow">
-<input type="radio" name="ctp" id="green">
-<input type="radio" name="ctp" id="teal">
-<input type="radio" name="ctp" id="sky">
-<input type="radio" name="ctp" id="sapphire">
-<input type="radio" name="ctp" id="blue">
-<input type="radio" name="ctp" id="lavender">
+<input type="checkbox" name="a" id="a" />
+<input type="checkbox" name="b" id="b" />
+<input type="checkbox" name="c" id="c" />
+<input type="radio" name="ctp" id="rosewater" />
+<input type="radio" name="ctp" id="flamingo" />
+<input type="radio" name="ctp" id="pink" />
+<input type="radio" name="ctp" id="mauve" />
+<input type="radio" name="ctp" id="red" />
+<input type="radio" name="ctp" id="maroon" />
+<input type="radio" name="ctp" id="peach" />
+<input type="radio" name="ctp" id="yellow" />
+<input type="radio" name="ctp" id="green" />
+<input type="radio" name="ctp" id="teal" />
+<input type="radio" name="ctp" id="sky" />
+<input type="radio" name="ctp" id="sapphire" />
+<input type="radio" name="ctp" id="blue" />
+<input type="radio" name="ctp" id="lavender" />
 <div class="container">
     <header>
         <nav class="nb">
@@ -50,7 +50,7 @@
     :not(#a:checked) ~ :not(#b:checked) ~ .container {
         --a: block;
         --b: none;
-        --s: '🌻';
+        --s: "🌻";
         --bgc: var(--ctp-latte-base);
         --ol0: var(--ctp-latte-overlay0);
         --ol1: var(--ctp-latte-overlay1);
@@ -74,7 +74,7 @@
     #a:checked ~ :not(#b:checked) ~ .container {
         --a: none;
         --b: block;
-        --s: '🪴';
+        --s: "🪴";
         --bgc: var(--ctp-frappe-base);
         --ol0: var(--ctp-frappe-overlay0);
         --ol1: var(--ctp-frappe-overlay1);
@@ -98,7 +98,7 @@
     #a:checked ~ #b:checked ~ .container {
         --a: block;
         --b: none;
-        --s: '🌺';
+        --s: "🌺";
         --bgc: var(--ctp-macchiato-base);
         --ol0: var(--ctp-macchiato-overlay0);
         --ol1: var(--ctp-macchiato-overlay1);
@@ -122,7 +122,7 @@
     :not(#a:checked) ~ #b:checked ~ .container {
         --a: none;
         --b: block;
-        --s: '🌿';
+        --s: "🌿";
         --bgc: var(--ctp-mocha-base);
         --ol0: var(--ctp-mocha-overlay0);
         --ol1: var(--ctp-mocha-overlay1);
@@ -148,7 +148,8 @@
         --cw: none;
     }
 
-    #a, #b {
+    #a,
+    #b {
         display: none;
     }
 
@@ -160,11 +161,14 @@
         display: var(--b);
     }
 
-    .a::after, .b::after {
+    .a::after,
+    .b::after {
         content: var(--s);
     }
 
-    html, body, .container {
+    html,
+    body,
+    .container {
         height: 100%;
     }
 
