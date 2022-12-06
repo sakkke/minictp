@@ -47,100 +47,200 @@
 <style>
     @import "@catppuccin/palette/style";
 
-    :not(#a:checked) ~ :not(#b:checked) ~ .container {
-        --a: block;
-        --b: none;
-        --s: "🌻";
-        --bgc: var(--ctp-latte-base);
-        --ol0: var(--ctp-latte-overlay0);
-        --ol1: var(--ctp-latte-overlay1);
-        --ol2: var(--ctp-latte-overlay2);
-        --rosewater: var(--ctp-latte-rosewater);
-        --flamingo: var(--ctp-latte-flamingo);
-        --pink: var(--ctp-latte-pink);
-        --mauve: var(--ctp-latte-mauve);
-        --red: var(--ctp-latte-red);
-        --maroon: var(--ctp-latte-maroon);
-        --peach: var(--ctp-latte-peach);
-        --yellow: var(--ctp-latte-yellow);
-        --green: var(--ctp-latte-green);
-        --teal: var(--ctp-latte-teal);
-        --sky: var(--ctp-latte-sky);
-        --sapphire: var(--ctp-latte-sapphire);
-        --blue: var(--ctp-latte-blue);
-        --lavender: var(--ctp-latte-lavender);
+    @media (prefers-color-scheme: light) {
+        :not(#a:checked) ~ :not(#b:checked) ~ .container {
+            --a: block;
+            --b: none;
+            --s: "🌻";
+            --bgc: var(--ctp-latte-base);
+            --ol0: var(--ctp-latte-overlay0);
+            --ol1: var(--ctp-latte-overlay1);
+            --ol2: var(--ctp-latte-overlay2);
+            --rosewater: var(--ctp-latte-rosewater);
+            --flamingo: var(--ctp-latte-flamingo);
+            --pink: var(--ctp-latte-pink);
+            --mauve: var(--ctp-latte-mauve);
+            --red: var(--ctp-latte-red);
+            --maroon: var(--ctp-latte-maroon);
+            --peach: var(--ctp-latte-peach);
+            --yellow: var(--ctp-latte-yellow);
+            --green: var(--ctp-latte-green);
+            --teal: var(--ctp-latte-teal);
+            --sky: var(--ctp-latte-sky);
+            --sapphire: var(--ctp-latte-sapphire);
+            --blue: var(--ctp-latte-blue);
+            --lavender: var(--ctp-latte-lavender);
+        }
+
+        #a:checked ~ :not(#b:checked) ~ .container {
+            --a: none;
+            --b: block;
+            --s: "🪴";
+            --bgc: var(--ctp-frappe-base);
+            --ol0: var(--ctp-frappe-overlay0);
+            --ol1: var(--ctp-frappe-overlay1);
+            --ol2: var(--ctp-frappe-overlay2);
+            --rosewater: var(--ctp-frappe-rosewater);
+            --flamingo: var(--ctp-frappe-flamingo);
+            --pink: var(--ctp-frappe-pink);
+            --mauve: var(--ctp-frappe-mauve);
+            --red: var(--ctp-frappe-red);
+            --maroon: var(--ctp-frappe-maroon);
+            --peach: var(--ctp-frappe-peach);
+            --yellow: var(--ctp-frappe-yellow);
+            --green: var(--ctp-frappe-green);
+            --teal: var(--ctp-frappe-teal);
+            --sky: var(--ctp-frappe-sky);
+            --sapphire: var(--ctp-frappe-sapphire);
+            --blue: var(--ctp-frappe-blue);
+            --lavender: var(--ctp-frappe-lavender);
+        }
+
+        #a:checked ~ #b:checked ~ .container {
+            --a: block;
+            --b: none;
+            --s: "🌺";
+            --bgc: var(--ctp-macchiato-base);
+            --ol0: var(--ctp-macchiato-overlay0);
+            --ol1: var(--ctp-macchiato-overlay1);
+            --ol2: var(--ctp-macchiato-overlay2);
+            --rosewater: var(--ctp-macchiato-rosewater);
+            --flamingo: var(--ctp-macchiato-flamingo);
+            --pink: var(--ctp-macchiato-pink);
+            --mauve: var(--ctp-macchiato-mauve);
+            --red: var(--ctp-macchiato-red);
+            --maroon: var(--ctp-macchiato-maroon);
+            --peach: var(--ctp-macchiato-peach);
+            --yellow: var(--ctp-macchiato-yellow);
+            --green: var(--ctp-macchiato-green);
+            --teal: var(--ctp-macchiato-teal);
+            --sky: var(--ctp-macchiato-sky);
+            --sapphire: var(--ctp-macchiato-sapphire);
+            --blue: var(--ctp-macchiato-blue);
+            --lavender: var(--ctp-macchiato-lavender);
+        }
+
+        :not(#a:checked) ~ #b:checked ~ .container {
+            --a: none;
+            --b: block;
+            --s: "🌿";
+            --bgc: var(--ctp-mocha-base);
+            --ol0: var(--ctp-mocha-overlay0);
+            --ol1: var(--ctp-mocha-overlay1);
+            --ol2: var(--ctp-mocha-overlay2);
+            --rosewater: var(--ctp-mocha-rosewater);
+            --flamingo: var(--ctp-mocha-flamingo);
+            --pink: var(--ctp-mocha-pink);
+            --mauve: var(--ctp-mocha-mauve);
+            --red: var(--ctp-mocha-red);
+            --maroon: var(--ctp-mocha-maroon);
+            --peach: var(--ctp-mocha-peach);
+            --yellow: var(--ctp-mocha-yellow);
+            --green: var(--ctp-mocha-green);
+            --teal: var(--ctp-mocha-teal);
+            --sky: var(--ctp-mocha-sky);
+            --sapphire: var(--ctp-mocha-sapphire);
+            --blue: var(--ctp-mocha-blue);
+            --lavender: var(--ctp-mocha-lavender);
+        }
     }
 
-    #a:checked ~ :not(#b:checked) ~ .container {
-        --a: none;
-        --b: block;
-        --s: "🪴";
-        --bgc: var(--ctp-frappe-base);
-        --ol0: var(--ctp-frappe-overlay0);
-        --ol1: var(--ctp-frappe-overlay1);
-        --ol2: var(--ctp-frappe-overlay2);
-        --rosewater: var(--ctp-frappe-rosewater);
-        --flamingo: var(--ctp-frappe-flamingo);
-        --pink: var(--ctp-frappe-pink);
-        --mauve: var(--ctp-frappe-mauve);
-        --red: var(--ctp-frappe-red);
-        --maroon: var(--ctp-frappe-maroon);
-        --peach: var(--ctp-frappe-peach);
-        --yellow: var(--ctp-frappe-yellow);
-        --green: var(--ctp-frappe-green);
-        --teal: var(--ctp-frappe-teal);
-        --sky: var(--ctp-frappe-sky);
-        --sapphire: var(--ctp-frappe-sapphire);
-        --blue: var(--ctp-frappe-blue);
-        --lavender: var(--ctp-frappe-lavender);
-    }
+    @media (prefers-color-scheme: dark) {
+        :not(#a:checked) ~ :not(#b:checked) ~ .container {
+            --a: block;
+            --b: none;
+            --s: "🌿";
+            --bgc: var(--ctp-mocha-base);
+            --ol0: var(--ctp-mocha-overlay0);
+            --ol1: var(--ctp-mocha-overlay1);
+            --ol2: var(--ctp-mocha-overlay2);
+            --rosewater: var(--ctp-mocha-rosewater);
+            --flamingo: var(--ctp-mocha-flamingo);
+            --pink: var(--ctp-mocha-pink);
+            --mauve: var(--ctp-mocha-mauve);
+            --red: var(--ctp-mocha-red);
+            --maroon: var(--ctp-mocha-maroon);
+            --peach: var(--ctp-mocha-peach);
+            --yellow: var(--ctp-mocha-yellow);
+            --green: var(--ctp-mocha-green);
+            --teal: var(--ctp-mocha-teal);
+            --sky: var(--ctp-mocha-sky);
+            --sapphire: var(--ctp-mocha-sapphire);
+            --blue: var(--ctp-mocha-blue);
+            --lavender: var(--ctp-mocha-lavender);
+        }
 
-    #a:checked ~ #b:checked ~ .container {
-        --a: block;
-        --b: none;
-        --s: "🌺";
-        --bgc: var(--ctp-macchiato-base);
-        --ol0: var(--ctp-macchiato-overlay0);
-        --ol1: var(--ctp-macchiato-overlay1);
-        --ol2: var(--ctp-macchiato-overlay2);
-        --rosewater: var(--ctp-macchiato-rosewater);
-        --flamingo: var(--ctp-macchiato-flamingo);
-        --pink: var(--ctp-macchiato-pink);
-        --mauve: var(--ctp-macchiato-mauve);
-        --red: var(--ctp-macchiato-red);
-        --maroon: var(--ctp-macchiato-maroon);
-        --peach: var(--ctp-macchiato-peach);
-        --yellow: var(--ctp-macchiato-yellow);
-        --green: var(--ctp-macchiato-green);
-        --teal: var(--ctp-macchiato-teal);
-        --sky: var(--ctp-macchiato-sky);
-        --sapphire: var(--ctp-macchiato-sapphire);
-        --blue: var(--ctp-macchiato-blue);
-        --lavender: var(--ctp-macchiato-lavender);
-    }
+        #a:checked ~ :not(#b:checked) ~ .container {
+            --a: none;
+            --b: block;
+            --s: "🌺";
+            --bgc: var(--ctp-macchiato-base);
+            --ol0: var(--ctp-macchiato-overlay0);
+            --ol1: var(--ctp-macchiato-overlay1);
+            --ol2: var(--ctp-macchiato-overlay2);
+            --rosewater: var(--ctp-macchiato-rosewater);
+            --flamingo: var(--ctp-macchiato-flamingo);
+            --pink: var(--ctp-macchiato-pink);
+            --mauve: var(--ctp-macchiato-mauve);
+            --red: var(--ctp-macchiato-red);
+            --maroon: var(--ctp-macchiato-maroon);
+            --peach: var(--ctp-macchiato-peach);
+            --yellow: var(--ctp-macchiato-yellow);
+            --green: var(--ctp-macchiato-green);
+            --teal: var(--ctp-macchiato-teal);
+            --sky: var(--ctp-macchiato-sky);
+            --sapphire: var(--ctp-macchiato-sapphire);
+            --blue: var(--ctp-macchiato-blue);
+            --lavender: var(--ctp-macchiato-lavender);
+        }
 
-    :not(#a:checked) ~ #b:checked ~ .container {
-        --a: none;
-        --b: block;
-        --s: "🌿";
-        --bgc: var(--ctp-mocha-base);
-        --ol0: var(--ctp-mocha-overlay0);
-        --ol1: var(--ctp-mocha-overlay1);
-        --ol2: var(--ctp-mocha-overlay2);
-        --rosewater: var(--ctp-mocha-rosewater);
-        --flamingo: var(--ctp-mocha-flamingo);
-        --pink: var(--ctp-mocha-pink);
-        --mauve: var(--ctp-mocha-mauve);
-        --red: var(--ctp-mocha-red);
-        --maroon: var(--ctp-mocha-maroon);
-        --peach: var(--ctp-mocha-peach);
-        --yellow: var(--ctp-mocha-yellow);
-        --green: var(--ctp-mocha-green);
-        --teal: var(--ctp-mocha-teal);
-        --sky: var(--ctp-mocha-sky);
-        --sapphire: var(--ctp-mocha-sapphire);
-        --blue: var(--ctp-mocha-blue);
-        --lavender: var(--ctp-mocha-lavender);
+        #a:checked ~ #b:checked ~ .container {
+            --a: block;
+            --b: none;
+            --s: "🪴";
+            --bgc: var(--ctp-frappe-base);
+            --ol0: var(--ctp-frappe-overlay0);
+            --ol1: var(--ctp-frappe-overlay1);
+            --ol2: var(--ctp-frappe-overlay2);
+            --rosewater: var(--ctp-frappe-rosewater);
+            --flamingo: var(--ctp-frappe-flamingo);
+            --pink: var(--ctp-frappe-pink);
+            --mauve: var(--ctp-frappe-mauve);
+            --red: var(--ctp-frappe-red);
+            --maroon: var(--ctp-frappe-maroon);
+            --peach: var(--ctp-frappe-peach);
+            --yellow: var(--ctp-frappe-yellow);
+            --green: var(--ctp-frappe-green);
+            --teal: var(--ctp-frappe-teal);
+            --sky: var(--ctp-frappe-sky);
+            --sapphire: var(--ctp-frappe-sapphire);
+            --blue: var(--ctp-frappe-blue);
+            --lavender: var(--ctp-frappe-lavender);
+        }
+
+        :not(#a:checked) ~ #b:checked ~ .container {
+            --a: none;
+            --b: block;
+            --s: "🌻";
+            --bgc: var(--ctp-latte-base);
+            --ol0: var(--ctp-latte-overlay0);
+            --ol1: var(--ctp-latte-overlay1);
+            --ol2: var(--ctp-latte-overlay2);
+            --rosewater: var(--ctp-latte-rosewater);
+            --flamingo: var(--ctp-latte-flamingo);
+            --pink: var(--ctp-latte-pink);
+            --mauve: var(--ctp-latte-mauve);
+            --red: var(--ctp-latte-red);
+            --maroon: var(--ctp-latte-maroon);
+            --peach: var(--ctp-latte-peach);
+            --yellow: var(--ctp-latte-yellow);
+            --green: var(--ctp-latte-green);
+            --teal: var(--ctp-latte-teal);
+            --sky: var(--ctp-latte-sky);
+            --sapphire: var(--ctp-latte-sapphire);
+            --blue: var(--ctp-latte-blue);
+            --lavender: var(--ctp-latte-lavender);
+        }
     }
 
     .container {
